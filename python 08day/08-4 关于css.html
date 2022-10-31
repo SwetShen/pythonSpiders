@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>'Title'</title>
+    <style>
+        .box{
+            color:red;
+            font-weight:bold;
+            font-size:50px;
+        }
+        div{
+            color:blue;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body class="box">
+    这是我的第二个HTML页面
+    <div class="a">这是一个元素</div>
+    <div id="b">这是一个元素</div>
+    <div>这是一个元素
+        <div class="c"></div>
+    </div>
+
+    <p index="0"></p>
+    <p></p>
+    <p></p>
+
+    <b></b>
+    <b></b>
+    <b></b>
+</body>
+</html>
+<!--
+CSS 级联样式表
+
+color:red; 设置字体颜色
+font-weight:bold; 设置字体加粗
+font-size:50px; 设置字体大小
+
+class="a" ==> .a
+id="b" ==> #b
+<div> ==> div
+<body class="box"><div class="a"><div class="c">  ==> .box .c  直接的父子\间接的父子...
+<body class="box"><div class="a">  ==> .box>.a  直接的父子
+<p index="0"></p> ==> p[index="0"] 或者 p[index]
+<b></b> ==> b:nth-of-type(2) 第二个b元素
+-->
